@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Lead | WheelsWeb</title>
+  <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="logo">WheelsWeb</div>
+  <nav>
+    <a href="/dashboard.html">Overview</a>
+    <a class="active">New Lead</a>
+    <a href="/view-cases.html">View All Cases</a>
+  </nav>
+</aside>
+
+<main class="main">
+  <h2>New Lead</h2>
+
+  <form id="leadForm">
+
+    <!-- BASIC INFO -->
+    <h3>New Lead</h3>
+
+    <div class="form-row">
+      <label>Loan ID</label>
+      <input type="text" id="loanId" readonly>
+    </div>
+
+    <div class="form-row">
+      <label>Date & Time</label>
+      <input type="text" id="dateTime" readonly>
+    </div>
+
+    <div class="form-row">
+      <label>Source</label>
+      <select id="source">
+        <option>Self</option>
+        <option>Dealer</option>
+        <option>Bank</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label>Stage</label>
+      <select id="stage">
+        <option>Lead</option>
+        <option>Cibil</option>
+        <option>Login</option>
+        <option>Sanction</option>
+        <option>Rejected</option>
+        <option>Disbursed</option>
+      </select>
+    </div>
+
+    <!-- PROFILE -->
+    <h3>Profile</h3>
+
+    <div class="form-row">
+      <label>Name *</label>
+      <input type="text" id="name" required>
+    </div>
+
+    <div class="form-row">
+      <label>Gender *</label>
+      <select id="gender" required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label>Mobile No *</label>
+      <input type="tel" id="mobile" maxlength="10" required>
+    </div>
+
+    <div class="form-row">
+      <label>Email *</label>
+      <input type="email" id="email" required>
+    </div>
+
+    <div class="form-row">
+      <label>Loan Amount *</label>
+      <input type="number" id="loanAmount" required>
+    </div>
+
+    <!-- VEHICLE -->
+    <h3>Vehicle Information</h3>
+
+    <div class="form-row">
+      <label>RC No *</label>
+      <input type="text" id="rcNo" required>
+    </div>
+
+    <div class="form-row">
+      <label>Vehicle / Variant *</label>
+      <input type="text" id="vehicle" required>
+    </div>
+
+    <div class="form-row">
+      <label>Vehicle Owner Contact No *</label>
+      <input type="tel" id="ownerContact" maxlength="10" required>
+    </div>
+
+    <!-- ADDRESS -->
+    <h3>Permanent Address</h3>
+
+    <div class="form-row">
+      <label>Category *</label>
+      <select id="addressCategory" required>
+        <option value="">Select</option>
+        <option>Rented</option>
+        <option>Self-Owned</option>
+        <option>Parental</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label>Near Landmark *</label>
+      <input type="text" id="landmark" required>
+    </div>
+
+    <!-- DEALER -->
+    <h3>Dealer Information</h3>
+
+    <div class="form-row">
+      <label>Case Dealer *</label>
+      <input type="text" id="dealer" required>
+    </div>
+
+    <!-- SUBMIT -->
+    <button type="submit" class="submit-btn">Submit</button>
+
+  </form>
+</main>
+
+<script src="/js/new-lead.js"></script>
+
+
+</body>
+</html>
